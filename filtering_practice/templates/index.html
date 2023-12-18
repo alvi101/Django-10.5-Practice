@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django Filters | Alvi Ahmed</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <h1>Django Filter Practice</h1>
+
+    <h3>Join Practice</h3>
+    <h4>{{ lst | join:'-' }}</h4>
+
+    <h3>Date Practice</h3>
+    <h4>{{ date | date }}</h4>
+
+    <h3>Add Filter Practice</h3>
+    <h4>{{ 5 | add:'5' }}</h4>
+
+    <h3>Date Practice</h3>
+    <h4>{{ date | date }}</h4>
+
+    <h3>Cap First Practice</h3>
+    <h4>{{ 'example' | capfirst }}</h4>
+
+    <h3>Cut Filter Practice</h3>
+    <h4>{{ str | cut:' ' }}</h4>
+
+    <h3>First Filter Practice</h3>
+    <h4>{{ lst | first }}</h4>
+
+    <h3>Last Filter Practice</h3>
+    <h4>{{ lst | last }}</h4>
+
+    <h3>Length Filter Practice</h3>
+    <h4>{{ lst | length }}</h4>
+
+    <h3>Linenumbers Filter Practice</h3>
+    <h4>{{ lst | linenumbers }}</h4>
+
+    <h3>Lower Filter Practice</h3>
+    <h4>{{ 'THIS IS EXAMPLE' | lower }}</h4>
+
+    <h3>Upper Filter Practice</h3>
+    <h4>{{ 'this is example' | upper }}</h4>
+
+    <h3>Title Filter Practice</h3>
+    <h4>{{ 'THIS IS EXAMPLE' | title }}</h4>
+
+    <h3>Lower Filter Practice</h3>
+    <h4>{{ lst | random }}</h4>
+
+    <h3>Slice Filter Practice</h3>
+    <h4>{{ lst | slice:'2' }}</h4>
+
+    <h3>Truncate Char Filter Practice</h3>
+    <h4>{{ details | truncatechars:20 }}</h4>
+
+    <h3>Truncate Word Filter Practice</h3>
+    <h4>{{ details | wordcount }}</h4>
+
+    <h3>Truncate Words Filter Practice</h3>
+    <h4>{{ details | truncatechars:20 }}</h4>
+  </body>
+</html>
